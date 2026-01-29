@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi malla interactiva</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+    }
+
+    .malla {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .materia {
+      padding: 20px;
+      border: 2px solid #333;
+      cursor: pointer;
+      background: #f2f2f2;
+    }
+
+    .materia.aprobada {
+      background: #b6f2c2;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Mi malla universitaria</h1>
+
+  <div class="malla">
+    <div class="materia" onclick="this.classList.toggle('aprobada')">Materia 1</div>
+    <div class="materia" onclick="this.classList.toggle('aprobada')">Materia 2</div>
+    <div class="materia" onclick="this.classList.toggle('aprobada')">Materia 3</div>
+  </div>
+
+</body>
+</html>
